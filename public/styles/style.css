@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Headings */
+  .primary-heading {
+    @apply text-lg xl:text-2xl mb-4 xl:mb-6 grid;
+  }
+  .subtitle {
+    @apply uppercase font-medium text-sm tracking-wider text-theme-three  mb-4;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply px-6 xl:px-7 py-3 bg-theme-six uppercase text-white font-medium text-xs inline-block tracking-widest;
+  }
+}
