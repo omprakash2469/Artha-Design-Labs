@@ -11,6 +11,14 @@
     @apply uppercase font-medium text-sm tracking-wider text-theme-three  mb-4;
   }
 
+  /* Forms */
+  .form-label {
+    @apply text-sm font-semibold;
+  }
+  .form-input {
+    @apply border-b-2 border-slate-300 py-2 outline-none block w-full;
+  }
+
   /* Buttons */
   .btn-primary {
     @apply px-6 xl:px-7 py-3 bg-theme-six uppercase text-white font-medium text-xs inline-block tracking-widest;

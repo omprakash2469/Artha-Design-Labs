@@ -1,0 +1,80 @@
+"use client";
+import { HomeFaq } from "@/public/images";
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
+import { useState } from "react";
+import SectionHeader from "../Header/SectionHeader";
+
+export default function Faqs() {
+  const [faq, setFaq] = useState(0);
+
+  const FaqSet = ({ item }) => {
+    return (
+      <div
+        className="bg-[#F8F3F3]"
+        onClick={() => setFaq(faq == item?.id ? 0 : item?.id)}
+      >
+        <h4 className="flex justify-between items-center pl-4 xl:pl-6 xl:text-lg">
+          <span className="font-semibold">{item?.question}</span>
+          <button
+            className={`p-4 ${
+              faq == item?.id
+                ? "bg-[#F8F3F3] text-theme-six"
+                : "bg-theme-six text-white"
+            }`}
+          >
+            <FontAwesomeIcon
+              icon={faq != item?.id ? faPlus : faMinus}
+              className="w-5 h-5 "
+            />
+          </button>
+        </h4>
+        <p
+          className={`pl-6 transition-all py-4 duration-500 border-t border-slate-300 overflow-hidden ${
+            faq == item?.id ? "block" : "hidden"
+          }`}
+        >
+          {item?.answer}
+        </p>
+      </div>
+    );
+  };
+
+  return (
+    <section className="container py-10 xl:py-16 2xl:py-20">
+      <div className="grid grid-cols-2 xl:gap-10">
+        <div>
+          <SectionHeader
+            subtitle={"FAQ's"}
+            heading={"Project Queries Answered Here"}
+          />
+          <div className="space-y-4">
+            {[1, 2, 3, 4, 5].map((value) => {
+              return (
+                <FaqSet
+                  key={value}
+                  item={{
+                    id: value,
+                    question: `This is question ${value}`,
+                    answer:
+                      "This is answer This is answer This is answer This is answer This is answer This is answer",
+                  }}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div>
+          <Image
+            src={HomeFaq}
+            alt="FAQs Image"
+            className="sm:w-full"
+            width={250}
+            height={250}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
