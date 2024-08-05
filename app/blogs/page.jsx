@@ -44,7 +44,7 @@ export default function BlogsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 xl:gap-10">
+        <div className="grid xl:grid-cols-2 gap-y-8 xl:gap-10">
           <BlogCard data={blog_data} />
           <BlogCard data={blog_data} />
           <BlogCard data={blog_data} />

@@ -1,3 +1,4 @@
+// Logo
 import Logo from "./logo.png";
 
 // Home
@@ -7,4 +8,27 @@ import Project1 from "./home/project-1.png";
 import HomeContact from "./home/contact-us.png";
 import Testimonial1 from "./home/testimonials-1.png";
 
-export { Logo, HomeBanner, Project1, HomeFaq, HomeContact, Testimonial1 };
+// Headers
+import ProjectHeader from "./banners/project-header.jpg";
+import ServiceHeader from "./banners/services-header.png";
+import AboutUsHeader from "./banners/about-us-header.png";
+
+// Other Images
+import ContactImage from "./others/contact-image.png";
+import AboutUsPortrait from "./others/about-us-portrait.png";
+import AboutUsLandscape from "./others/about-us-landscape.png";
+
+export {
+  Logo,
+  HomeBanner,
+  Project1,
+  HomeFaq,
+  HomeContact,
+  Testimonial1,
+  ProjectHeader,
+  ServiceHeader,
+  ContactImage,
+  AboutUsHeader,
+  AboutUsLandscape,
+  AboutUsPortrait,
+};

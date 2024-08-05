@@ -1,6 +1,6 @@
 export default function WhoWeAre() {
   return (
-    <section className="container py-14 mb-10">
+    <section className="container py-8 xl:py-14 mb-10">
       <h2 className="text-2xl text-center xl:text-6xl uppercase font-bold mb-4 xl:mb-8">
         Artha
       </h2>
@@ -11,7 +11,7 @@ export default function WhoWeAre() {
             <span>Artistry, Sustainability, Technology:</span>
             <span>Our Architectural Ambition</span>
           </h2>
-          <p className="leading-7">
+          <p className="leading-7 text-sm text-slate-600 xl:text-base">
             ARTHA DesignLabs is a young and hungry architectural firm dedicated
             to merging artistry, sustainability, and technology in every
             project. With years of research and a commitment to excellence, we
@@ -19,7 +19,7 @@ export default function WhoWeAre() {
           </p>
         </div>
         <div>
-          <p className="leading-7">
+          <p className="leading-7 text-sm text-slate-600 xl:text-base">
             Artha DesignLabs is your partner for comprehensive architectural
             solutions. From innovative architectural and interior design to
             urban planning and sustainability consulting, we offer a diverse

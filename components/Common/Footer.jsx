@@ -21,12 +21,14 @@ const FooterSection = ({ name, links, external }) => {
         {links.map((value, i) => {
           return (
             <li key={i} className={value.icon && "flex !mb-4"}>
-              {value.icon && (
-                <FontAwesomeIcon
-                  icon={value.icon}
-                  className="mr-2 xl:mr-4 mt-2 text-theme-six"
-                />
-              )}
+              <div>
+                {value.icon && (
+                  <FontAwesomeIcon
+                    icon={value.icon}
+                    className="mr-2 w-5 xl:mr-4 mt-2 text-theme-six"
+                  />
+                )}
+              </div>
 
               <Link
                 href={value.link}
@@ -90,10 +92,9 @@ export default function Footer() {
         />
       </div>
 
-      <p className="py-5 text-center border-t border-slate-400">
-        <span>
-          <FontAwesomeIcon icon={faCopyright} /> {new Date().getFullYear()}
-        </span>
+      <p className="py-5 text-center border-t border-slate-400 flex justify-center">
+        <FontAwesomeIcon icon={faCopyright} className="w-5" />
+        <span className="mx-2">{new Date().getFullYear()}</span>
         <span> || All Rights Reserved</span>
       </p>
     </footer>

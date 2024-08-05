@@ -11,8 +11,8 @@ export default function Testimonials() {
           heading={"What Clients says About us"}
         />
 
-        <div className="py-10 xl:py-20 text-center">
-          <p className="text-lg xl:w-[700px] mx-auto">
+        <div className="py-10 px-4 xl:py-20 text-center">
+          <p className="text-sm xl:text-lg xl:w-[700px] mx-auto">
             Working with ARTHA DesignLabs was a transformative experience. Their
             attention to detail and creative approach exceeded our expectations.
           </p>

@@ -43,8 +43,17 @@ export default function Faqs() {
 
   return (
     <section className="container py-10 xl:py-16 2xl:py-20">
-      <div className="grid grid-cols-2 xl:gap-10">
-        <div>
+      <div className="grid gap-4 xl:grid-cols-2 xl:gap-10">
+        <div className="xl:order-2">
+          <Image
+            src={HomeFaq}
+            alt="FAQs Image"
+            className="w-full"
+            width={250}
+            height={250}
+          />
+        </div>
+        <div className="xl:order-1">
           <SectionHeader
             subtitle={"FAQ's"}
             heading={"Project Queries Answered Here"}
@@ -64,15 +73,6 @@ export default function Faqs() {
               );
             })}
           </div>
-        </div>
-        <div>
-          <Image
-            src={HomeFaq}
-            alt="FAQs Image"
-            className="sm:w-full"
-            width={250}
-            height={250}
-          />
         </div>
       </div>
     </section>

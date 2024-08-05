@@ -24,12 +24,12 @@ export default function ContactUs() {
 
   return (
     <section className="container py-10 xl:py-20">
-      <div className="grid xl:grid-cols-2 border-2 border-slate-200 rounded-3xl p-4 gap-5 xl:gap-10 shadow-lg shadow-slate-200">
+      <div className="grid xl:grid-cols-2 border-2 border-slate-200 rounded-3xl p-2 xl:p-4 gap-5 xl:gap-10 shadow-lg shadow-slate-200">
         <div
           className={`bg-[url(/images/home/contact-us.png)] bg-cover p-4 xl:p-10 2xl:p-20 rounded-3xl grid items-center`}
         >
           <h2 className="primary-heading">Connect with Our Team Today</h2>
-          <ul className="space-y-4 xl:space-y-10 *:space-x-2 xl:*:space-x-4 *:flex font-medium">
+          <ul className="space-y-4 xl:space-y-10 *:space-x-2 xl:*:space-x-4 *:flex font-medium text-sm xl:text-base">
             <li>
               <FontAwesomeIcon icon={faPhone} className="mt-1" />
               <Link href={"#9814227724"}>+91 9814227724</Link>
@@ -61,7 +61,7 @@ export default function ContactUs() {
             your vision to life
           </p>
 
-          <form action="" className="py-4 px-4 xl:px-6 space-y-4 xl:space-y-6">
+          <form action="" className="py-4 xl:px-6 space-y-4 xl:space-y-6">
             <div className="grid xl:grid-cols-2 gap-4 xl:gap-6">
               <div>
                 <label htmlFor={"name"} className="form-label">
