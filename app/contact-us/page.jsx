@@ -79,15 +79,15 @@ export default function ContactPage() {
               <span>Redefining Modern Architecture</span>
             </h2>
             <p className="my-5 text-sm xl:text-base">
-              we don't just build buildings; we craft experiences. With a fusion
-              of innovation, elegance, and sustainability, we redefine modern
-              architecture, creating timeless landmarks that inspire awe and
-              admiration. Elevate your vision with our unparalleled expertise
-              and passion for pushing the boundaries of design. With an
-              unwavering commitment to excellence, our team combines visionary
-              design with cutting-edge technology to create spaces that
-              transcend the ordinary. From concept to completion, we invite you
-              to join us in shaping the future of architecture.
+              we don&apos;t just build buildings; we craft experiences. With a
+              fusion of innovation, elegance, and sustainability, we redefine
+              modern architecture, creating timeless landmarks that inspire awe
+              and admiration. Elevate your vision with our unparalleled
+              expertise and passion for pushing the boundaries of design. With
+              an unwavering commitment to excellence, our team combines
+              visionary design with cutting-edge technology to create spaces
+              that transcend the ordinary. From concept to completion, we invite
+              you to join us in shaping the future of architecture.
             </p>
             <div>
               <h6 className="font-medium">Riya Sen Kapoor</h6>

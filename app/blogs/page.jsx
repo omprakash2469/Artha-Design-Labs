@@ -24,9 +24,9 @@ export default function BlogsPage() {
             <p>
               Embark on a journey through the mesmerizing world of architecture
               with us. Discover the latest trends, delve into timeless designs,
-              and unlock the secrets behind iconic structures. Let's explore the
-              intersection of art, culture, and innovation in the built
-              environment together
+              and unlock the secrets behind iconic structures. Let&apos;s
+              explore the intersection of art, culture, and innovation in the
+              built environment together
             </p>
           </div>
           <div>

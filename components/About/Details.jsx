@@ -22,8 +22,9 @@ export default function Details() {
           </div>
           <div>
             <h2 className="primary-heading">
-              In every project we undertake, there's a story of passion woven
-              into the fabric of creativity, functionality, and sustainability
+              In every project we undertake, there&apos;s a story of passion
+              woven into the fabric of creativity, functionality, and
+              sustainability
             </h2>
             <p>
               As part of our long-term goal, we research and utilize building
@@ -44,9 +45,9 @@ export default function Details() {
 
       <div>
         <h2 className="primary-heading px-4 xl:px-20 mb-8 xl:mb-12">
-          we believe that 'God is in the details,' and we meticulously ensure
-          the highest quality in every aspect of our work. From concept to
-          completion, excellence remains our unwavering standard.
+          we believe that &apos;God is in the details,&apos; and we meticulously
+          ensure the highest quality in every aspect of our work. From concept
+          to completion, excellence remains our unwavering standard.
         </h2>
 
         <div className="xl:columns-2 gap-10 pb-10">

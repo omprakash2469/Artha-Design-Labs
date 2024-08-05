@@ -14,11 +14,11 @@ export default function Story() {
             of our nation.
           </p>
           <p>
-            Embracing the philosophy of "design as narrative," we have
+            Embracing the philosophy of &quot;design as narrative,&quot; we have
             successfully delivered over 100 projects across various domains,
             each infused with narrative depth and expansive vision. Whether in
-            architecture or interior design, Artha's design ethos embodies an
-            affinity for the novel and unexplored.
+            architecture or interior design, Artha&apos;s design ethos embodies
+            an affinity for the novel and unexplored.
           </p>
           <p>
             Our designs are driven by the unique aspirations of our clients,

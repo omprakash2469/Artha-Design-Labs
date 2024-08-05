@@ -44,8 +44,8 @@ const ArticleCard = () => {
     <div>
       <p className="mb-4">
         Designing interior spaces that seamlessly integrate with the
-        architectural vision, reflecting the client's aesthetic preferences and
-        functional requirements.
+        architectural vision, reflecting the client&apos;s aesthetic preferences
+        and functional requirements.
       </p>
       <Image src={Project1} alt="project image" className="w-full" />
     </div>

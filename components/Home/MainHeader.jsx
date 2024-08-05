@@ -11,7 +11,7 @@ export default function MainHeader() {
               Giving Your Home
             </span>
             <span className="text-2xl xl:text-6xl 2xl:text-7xl uppercase font-bold">
-              " Artha "
+              &quot; Artha &quot;
             </span>
           </h1>
         </div>

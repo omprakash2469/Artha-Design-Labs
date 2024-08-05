@@ -6,8 +6,8 @@ export default function NewsletterSubscriptionForm() {
         <h2 className="primary-heading">Subscribe to Our Newsletter</h2>
         <p className="-mt-2 mb-8 text-sm xl:text-base">
           Stay ahead of architectural trends and receive exclusive insights by
-          subscribing to our newsletter. Don't miss out on the opportunity to
-          elevate your inbox with inspiration from Iconic Structures.
+          subscribing to our newsletter. Don&apos;t miss out on the opportunity
+          to elevate your inbox with inspiration from Iconic Structures.
         </p>
 
         <form

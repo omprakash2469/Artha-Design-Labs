@@ -57,8 +57,8 @@ export default function ContactUs() {
           />
           <p className="text-slate-500 text-center text-sm -mt-4 mb-4 xl:mb-6">
             Have questions or inquiries? Reach out to us today for expert
-            architectural services tailored to your needs. We're here to bring
-            your vision to life
+            architectural services tailored to your needs. We&apos;re here to
+            bring your vision to life
           </p>
 
           <form action="" className="py-4 xl:px-6 space-y-4 xl:space-y-6">

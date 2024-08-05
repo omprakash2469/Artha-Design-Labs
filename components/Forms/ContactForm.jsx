@@ -12,7 +12,7 @@ export default function ContactForm() {
 
   return (
     <div className="border-[6px] border-theme-six p-4 xl:p-10">
-      <h2 className="primary-heading mb-12">Let's Talk!</h2>
+      <h2 className="primary-heading mb-12">Let&apos;s Talk!</h2>
       <form action="" method="post" className="space-y-4 xl:space-y-8">
         <div>
           <label htmlFor="first_name" className="form-label">
