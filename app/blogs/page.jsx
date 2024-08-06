@@ -1,15 +1,7 @@
-import BlogCard from "@/components/Cards/BlogCard";
+import BlogsGrid from "@/components/Blogs/BlogsGrid";
 import NewsletterSubscriptionForm from "@/components/Forms/NewsletterSubscriptionForm";
 import { Project1 } from "@/public/images";
 import Image from "next/image";
-
-const blog_data = {
-  title: "Eco-Friendly Trends in Modern Interiors",
-  description:
-    "Eco-friendly trends in modern interiors have become increasingly popular as people seek sustainable solutions for their homes that reduce environmental impact without sacrificing style or comfort.",
-  author: "By Artha",
-  date: "21 April, 2024",
-};
 
 export default function BlogsPage() {
   return (
@@ -44,12 +36,7 @@ export default function BlogsPage() {
           </p>
         </div>
 
-        <div className="grid xl:grid-cols-2 gap-y-8 xl:gap-10">
-          <BlogCard data={blog_data} />
-          <BlogCard data={blog_data} />
-          <BlogCard data={blog_data} />
-          <BlogCard data={blog_data} />
-        </div>
+        <BlogsGrid limit={0} />
       </section>
 
       <NewsletterSubscriptionForm />
