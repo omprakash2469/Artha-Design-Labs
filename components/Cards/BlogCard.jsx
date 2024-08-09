@@ -39,13 +39,13 @@ export default function BlogCard({ data }) {
               <span className="text-xs text-slate-500">{data?.date}</span>
             </span>
           </p>
-          <h2 className="font-medium text-lg xl:text-xl">{data?.title}</h2>
+          <h2 className="font-hannari text-lg xl:text-2xl">{data?.title}</h2>
           <p className="text-slate-500 text-sm xl:text-base my-4">
             {data?.exerpt}...
           </p>
           {/* <Link href={`${BLOGS}/${data?.slug}`}> */}
           <button>
-            <span className="font-semibold uppercase text-theme-six text-sm space-x-2 flex items-start">
+            <span className="font-semibold font-poppins uppercase text-theme-six text-sm space-x-2 flex items-start">
               <span>Read more </span>
               <FontAwesomeIcon icon={faArrowRight} className="w-4" />
             </span>

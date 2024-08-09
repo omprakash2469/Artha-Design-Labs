@@ -15,7 +15,7 @@ export default function ProjectCard({ name, image, slug }) {
         />
       </div>
       <figcaption>
-        <h2 className="font-medium xl:text-lg border-b-2 my-4 border-theme-six w-fit">
+        <h2 className="xl:text-2xl font-hannari border-b-2 my-4 border-theme-six w-fit">
           <Link href={`${PROJECTS}/${slug}`}>{name}</Link>
         </h2>
       </figcaption>

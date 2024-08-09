@@ -44,7 +44,7 @@ export default function Details() {
       </div>
 
       <div>
-        <h2 className="primary-heading px-4 xl:px-20 mb-8 xl:mb-12">
+        <h2 className="primary-heading text-center px-4 xl:px-20 mb-8 xl:mb-12">
           we believe that &apos;God is in the details,&apos; and we meticulously
           ensure the highest quality in every aspect of our work. From concept
           to completion, excellence remains our unwavering standard.

@@ -29,10 +29,10 @@ export default function ContactUs() {
           className={`bg-[url(/images/home/contact-us.png)] bg-cover p-4 xl:p-10 2xl:p-20 rounded-3xl grid items-center`}
         >
           <h2 className="primary-heading">Connect with Our Team Today</h2>
-          <ul className="space-y-4 xl:space-y-10 *:space-x-2 xl:*:space-x-4 *:flex font-medium text-sm xl:text-base">
+          <ul className="space-y-4 xl:space-y-10 *:space-x-2 xl:*:space-x-4 *:flex text-sm xl:text-lg font-poppins">
             <li>
               <FontAwesomeIcon icon={faPhone} className="mt-1" />
-              <Link href={"#9814227724"}>+91 9814227724</Link>
+              <Link href={"tel:9814227724"}>+91 9814227724</Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faEnvelope} className="mt-1" />

@@ -16,7 +16,7 @@ export default function Faqs() {
         onClick={() => setFaq(faq == item?.id ? 0 : item?.id)}
       >
         <h4 className="flex justify-between items-center pl-4 xl:pl-6 xl:text-lg">
-          <span className="font-semibold">{item?.question}</span>
+          <span className="font-semibold font-poppins">{item?.question}</span>
           <button
             className={`p-4 ${
               faq == item?.id
@@ -65,7 +65,7 @@ export default function Faqs() {
                   key={value}
                   item={{
                     id: value,
-                    question: `This is question ${value}`,
+                    question: `How long does an architectural project take?`,
                     answer:
                       "This is answer This is answer This is answer This is answer This is answer This is answer",
                   }}

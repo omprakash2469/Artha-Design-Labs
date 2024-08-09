@@ -13,7 +13,7 @@ import Link from "next/link";
 const FooterSection = ({ name, links, external }) => {
   return (
     <div>
-      <h4 className="text-lg xl:text-xl font-semibold mb-4">
+      <h4 className="text-lg xl:text-xl font-semibold font-poppins mb-4">
         <span>{name}</span>
         <span className="h-[3px] w-16 bg-theme-six block"></span>
       </h4>
@@ -32,7 +32,7 @@ const FooterSection = ({ name, links, external }) => {
 
               <Link
                 href={value.link}
-                className="font-medium"
+                className="font-medium font-poppins"
                 target={external ? "_blank" : "_self"}
               >
                 {value.name}
@@ -92,7 +92,7 @@ export default function Footer() {
         />
       </div>
 
-      <p className="py-5 text-center border-t border-slate-400 flex justify-center">
+      <p className="py-5 text-center font-poppins border-t border-slate-400 flex justify-center">
         <FontAwesomeIcon icon={faCopyright} className="w-5" />
         <span className="mx-2">{new Date().getFullYear()}</span>
         <span> || All Rights Reserved</span>

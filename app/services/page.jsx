@@ -24,10 +24,14 @@ const ServiceCard = ({ icon, name, desc, image }) => {
         <div className="rounded-lg">
           <FontAwesomeIcon
             icon={icon}
-            className="w-10 mx-auto text-theme-six"
+            className="w-10 text-lg xl:text-4xl mx-auto text-theme-six"
           />
-          <h3 className="font-semibold group-hover:text-white my-4">{name}</h3>
-          <p className="group-hover:text-slate-200 text-sm">{desc}</p>
+          <h3 className="font-bold font-poppins xl:text-xl group-hover:text-white my-4 xl:my-8">
+            {name}
+          </h3>
+          <p className="group-hover:text-slate-200 text-sm font-medium">
+            {desc}
+          </p>
         </div>
       </div>
       <Image
@@ -59,7 +63,7 @@ export default function ServicesPage() {
         <div className="grid xl:grid-cols-2 items-center gap-4 xl:gap-10">
           <div className="text-center xl:text-left">
             <h4 className="subtitle">Our Services</h4>
-            <h1 className="primary-heading">
+            <h1 className="primary-heading space-y-1 xl:space-y-2">
               <span>Crafting Innovation: </span>
               <span>Where Creativity, Sustainability, </span>
               <span>and Excellence Converge </span>
@@ -111,9 +115,9 @@ export default function ServicesPage() {
               {categories.map((value, i) => {
                 return (
                   <li key={i}>
-                    <span className="hover:text-theme-six transition-all cursor-pointer">
+                    <p className="hover:text-theme-six transition-all cursor-pointer">
                       {value}
-                    </span>
+                    </p>
                   </li>
                 );
               })}

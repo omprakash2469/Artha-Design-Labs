@@ -16,7 +16,9 @@ export default function Navbar() {
         className="group text-slate-600 hover:text-theme-six"
         onClick={() => setNavbar(false)}
       >
-        <Link href={nav.link}>{nav.name}</Link>
+        <Link href={nav.link} className="font-hannari text-[17px]">
+          {nav.name}
+        </Link>
         <span className="bg-slate-200 group-hover:bg-theme-six h-[2.5px] block w-0 group-hover:w-full transition-all duration-500"></span>
       </li>
     );

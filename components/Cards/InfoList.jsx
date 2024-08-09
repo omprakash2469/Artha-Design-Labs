@@ -6,9 +6,11 @@ export default function InfoList({ name, value, icon }) {
       <div>
         <FontAwesomeIcon icon={icon} className="w-4 mt-1 mr-2 text-theme-six" />
       </div>
-      <div className="font-medium">
-        <h5 className="text-theme-six">{name}</h5>
-        <p className="text-sm text-slate-500">{value}</p>
+      <div>
+        <h5 className="text-theme-six font-medium text-lg font-poppins">
+          {name}
+        </h5>
+        <p className="text-slate-500 xl:text-lg">{value}</p>
       </div>
     </li>
   );

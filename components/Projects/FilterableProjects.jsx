@@ -17,9 +17,9 @@ export default function FilterableProjects() {
         {tabs.map((value, i) => {
           return (
             <li key={i}>
-              <span className="hover:text-theme-six transition-all font-medium cursor-pointer">
+              <p className="hover:text-theme-six transition-all font-medium cursor-pointer">
                 {value}
-              </span>
+              </p>
             </li>
           );
         })}

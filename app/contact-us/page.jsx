@@ -10,10 +10,15 @@ import Image from "next/image";
 
 const IconItem = ({ icon, value, name }) => {
   return (
-    <div className="grid">
-      <FontAwesomeIcon className="w-10 h-10 text-theme-six" icon={icon} />
-      <span className="font-semibold xl:text-lg">{value}</span>
-      <small className="uppercase text-[10px]">{name}</small>
+    <div className="grid text-center">
+      <FontAwesomeIcon
+        className="w-10 h-10 xl:w-12 xl:h-12 mx-auto text-theme-six"
+        icon={icon}
+      />
+      <span className="font-semibold text-lg xl:text-2xl tracking-wide font-hannari">
+        {value}
+      </span>
+      <small className="uppercase font-poppins mt-2 text-[10px]">{name}</small>
     </div>
   );
 };
