@@ -1,3 +1,6 @@
+import { ABOUT_US } from "@/data/urls";
+import Link from "next/link";
+
 export default function WhoWeAre() {
   return (
     <section className="container py-8 xl:py-14 mb-10">
@@ -31,7 +34,9 @@ export default function WhoWeAre() {
             excellence, Artha DesignLabs ensures that every project exceeds
             expectationsz
           </p>
-          <button className="btn-primary mt-6">Learn more</button>
+          <Link href={ABOUT_US} className="btn-primary mt-6">
+            Learn more
+          </Link>
         </div>
       </div>
     </section>

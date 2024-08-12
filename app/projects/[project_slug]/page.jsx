@@ -7,7 +7,6 @@ import {
   faLocationPin,
   faSquare,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +14,7 @@ export default function ProjectDetails({ params }) {
   const slug = params.project_slug;
   return (
     <>
-      <header className="container py-6 xl:py-14">
+      <header className="container py-6 xl:py-20 mt-8 xl:mt-14">
         <div className="grid grid-cols-2 items-center">
           <div>
             <h2 className="text-xl xl:text-3xl mb-4 xl:mb-8">Altroz Villa</h2>
@@ -51,17 +50,13 @@ export default function ProjectDetails({ params }) {
             provident placeat deleniti ullam est?
           </p>
 
-          <div className="grid gap-5">
+          <div className="grid gap-5 grid-cols-2">
             <Image
               src={ProjectHeader}
               alt="project image"
-              className="w-full col-span-2"
+              className="w-full "
             />
-            <Image
-              src={ProjectHeader}
-              alt="project image"
-              className="w-full col-span-2"
-            />
+            <Image src={ProjectHeader} alt="project image" className="w-full" />
             <Image src={ProjectHeader} alt="project image" className="w-full" />
             <Image src={ProjectHeader} alt="project image" className="w-full" />
           </div>

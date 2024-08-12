@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ProjectCard({ name, image, slug }) {
   return (
-    <figure>
+    <figure className="hover:scale-[1.02] transition-all">
       <div>
         <Image
           src={image}
@@ -15,7 +15,7 @@ export default function ProjectCard({ name, image, slug }) {
         />
       </div>
       <figcaption>
-        <h2 className="xl:text-2xl font-hannari border-b-2 my-4 border-theme-six w-fit">
+        <h2 className="xl:text-2xl font-hannari border-b-[3px] my-4 border-theme-six w-fit">
           <Link href={`${PROJECTS}/${slug}`}>{name}</Link>
         </h2>
       </figcaption>

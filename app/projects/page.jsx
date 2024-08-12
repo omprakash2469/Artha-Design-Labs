@@ -6,8 +6,12 @@ import Image from "next/image";
 export default function ProjectPage() {
   return (
     <>
-      <header className="container">
-        <Image src={ProjectHeader} alt="home banner" className="w-full" />
+      <header className="bg-black">
+        <Image
+          src={ProjectHeader}
+          alt="home banner"
+          className="w-full opacity-80"
+        />
       </header>
 
       <section className="container py-10 xl:py-14">

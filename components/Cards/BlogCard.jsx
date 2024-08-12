@@ -1,5 +1,4 @@
 import { BLOGS } from "@/data/urls";
-import { Project1 } from "@/public/images";
 import {
   faArrowRight,
   faCalendar,
@@ -11,7 +10,7 @@ import Link from "next/link";
 
 export default function BlogCard({ data }) {
   return (
-    <div>
+    <div className="hover:scale-[1.02] transition-all">
       <figure>
         <div>
           <Image
@@ -43,14 +42,16 @@ export default function BlogCard({ data }) {
           <p className="text-slate-500 text-sm xl:text-base my-4">
             {data?.exerpt}...
           </p>
-          {/* <Link href={`${BLOGS}/${data?.slug}`}> */}
-          <button>
-            <span className="font-semibold font-poppins uppercase text-theme-six text-sm space-x-2 flex items-start">
+          <Link href={`${BLOGS}/${data?.slug}`} className="group">
+            <span className="font-semibold font-poppins transition-all uppercase group-hover:text-theme-six text-sm space-x-2 flex items-start">
               <span>Read more </span>
-              <FontAwesomeIcon icon={faArrowRight} className="w-4" />
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="w-4 -rotate-45 group-hover:rotate-0 transition-all"
+              />
             </span>
-            <span className="h-[2px] bg-theme-six w-10 block"></span>
-          </button>
+            <span className="h-[2px] group-hover:bg-theme-six bg-black w-10 block"></span>
+          </Link>
         </figcaption>
       </figure>
     </div>

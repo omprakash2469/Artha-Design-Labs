@@ -1,7 +1,22 @@
+"use client";
 import { Project1 } from "@/public/images";
 import ProjectCard from "../Cards/ProjectCard";
+import { project_data } from "@/data/projects";
+import { useState } from "react";
 
 export default function FilterableProjects() {
+  const [projects, setProjects] = useState(project_data);
+  const [activeTab, setActiveTab] = useState("All");
+
+  const filter_projects = (value) => {
+    if (value == "All") {
+      setProjects(project_data);
+    } else {
+      setProjects(project_data.filter((key) => key.category == value));
+    }
+    setActiveTab(value);
+  };
+
   const tabs = [
     "All",
     "Hospitality",
@@ -16,8 +31,12 @@ export default function FilterableProjects() {
       <ul className="flex flex-wrap gap-4 xl:gap-x-12 justify-center mb-6 xl:mb-10">
         {tabs.map((value, i) => {
           return (
-            <li key={i}>
-              <p className="hover:text-theme-six transition-all font-medium cursor-pointer">
+            <li key={i} onClick={() => filter_projects(value)}>
+              <p
+                className={`transition-all font-medium cursor-pointer ${
+                  activeTab == value ? "text-theme-six" : "hover:text-theme-six"
+                }`}
+              >
                 {value}
               </p>
             </li>
@@ -26,11 +45,11 @@ export default function FilterableProjects() {
       </ul>
 
       <div className="grid xl:grid-cols-2 gap-4 xl:gap-x-8">
-        {[1, 2, 3, 4].map((i) => {
+        {projects.map((value, i) => {
           return (
             <ProjectCard
               key={i}
-              name={"Alixir"}
+              name={value?.name}
               image={Project1}
               slug={"alixir"}
             />

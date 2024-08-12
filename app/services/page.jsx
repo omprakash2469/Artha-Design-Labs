@@ -1,7 +1,13 @@
-import { Project1, ServiceHeader } from "@/public/images";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  Project1,
+  ServiceBell,
+  ServiceBuilding,
+  ServiceCommercial,
+  ServiceHeader,
+  ServiceHome,
+} from "@/public/images";
 import Image from "next/image";
+import Link from "next/link";
 
 const categories = [
   "Interior Design",
@@ -22,9 +28,10 @@ const ServiceCard = ({ icon, name, desc, image }) => {
     <div className="relative bg-black rounded-xl shadow-xl shadow-slate-300 group border-slate-300">
       <div className="w-full h-full group-hover:bg-transparent rounded-lg border transition-all cursor-pointer bg-white px-8 absolute inset-0 grid place-items-center  text-center z-20">
         <div className="rounded-lg">
-          <FontAwesomeIcon
-            icon={icon}
-            className="w-10 text-lg xl:text-4xl mx-auto text-theme-six"
+          <Image
+            src={icon}
+            alt="background image"
+            className="w-14 object-cover mx-auto"
           />
           <h3 className="font-bold font-poppins xl:text-xl group-hover:text-white my-4 xl:my-8">
             {name}
@@ -37,21 +44,17 @@ const ServiceCard = ({ icon, name, desc, image }) => {
       <Image
         src={Project1}
         alt="background image"
-        className="h-80 object-cover opacity-50 rounded-lg"
+        className="h-80 object-cover opacity-40 rounded-lg"
       />
     </div>
   );
 };
 
-const ArticleCard = () => {
+const ArticleCard = ({ id, info, image }) => {
   return (
-    <div>
-      <p className="mb-4">
-        Designing interior spaces that seamlessly integrate with the
-        architectural vision, reflecting the client&apos;s aesthetic preferences
-        and functional requirements.
-      </p>
-      <Image src={Project1} alt="project image" className="w-full" />
+    <div id={id}>
+      <p className="mb-4">{info}</p>
+      <Image src={image} alt="project image" className="w-full" />
     </div>
   );
 };
@@ -59,7 +62,7 @@ const ArticleCard = () => {
 export default function ServicesPage() {
   return (
     <>
-      <header className="container py-10 xl:py-20">
+      <header className="container py-10 xl:py-28 mt-14">
         <div className="grid xl:grid-cols-2 items-center gap-4 xl:gap-10">
           <div className="text-center xl:text-left">
             <h4 className="subtitle">Our Services</h4>
@@ -82,50 +85,66 @@ export default function ServicesPage() {
             desc={
               "Crafting bespoke homes that reflect your lifestyle and aspirations"
             }
-            icon={faHome}
+            icon={ServiceHome}
           />
           <ServiceCard
-            name={"Residental"}
+            name={"Commercial"}
             desc={
               "Crafting bespoke homes that reflect your lifestyle and aspirations"
             }
-            icon={faHome}
+            icon={ServiceCommercial}
           />
           <ServiceCard
-            name={"Residental"}
+            name={"Hospitality"}
             desc={
               "Crafting bespoke homes that reflect your lifestyle and aspirations"
             }
-            icon={faHome}
+            icon={ServiceBell}
           />
           <ServiceCard
-            name={"Residental"}
+            name={"Instituitional"}
             desc={
               "Crafting bespoke homes that reflect your lifestyle and aspirations"
             }
-            icon={faHome}
+            icon={ServiceBuilding}
           />
         </div>
       </section>
 
       <section className="container py-8 xl:py-14">
         <div className="grid gap-8 xl:grid-cols-[2fr_5fr]">
-          <div>
+          {/* Stick this element when user scroll */}
+          <div className="sticky top-0">
             <ul className="space-y-4">
               {categories.map((value, i) => {
                 return (
                   <li key={i}>
-                    <p className="hover:text-theme-six transition-all cursor-pointer">
+                    <Link
+                      href={`#${value}`}
+                      className="hover:text-theme-six transition-all cursor-pointer"
+                    >
                       {value}
-                    </p>
+                    </Link>
                   </li>
                 );
               })}
             </ul>
           </div>
 
-          <div>
-            <ArticleCard />
+          {/* Scroll this element */}
+          <div className="space-y-4 xl:space-y-12 overflow-y-auto">
+            {categories.map((value, i) => {
+              return (
+                <ArticleCard
+                  key={i}
+                  id={value}
+                  image={Project1}
+                  info={
+                    "Designing interior spaces that seamlessly integrate with the architectural vision, reflecting the client&apos;s aesthetic preferences and functional requirements. client&apos;s aesthetic preferences and functional requirements. client&apos;s aesthetic preferences and functional requirements.client&apos;s aesthetic preferences and functional requirements."
+                  }
+                />
+              );
+            })}
           </div>
         </div>
       </section>

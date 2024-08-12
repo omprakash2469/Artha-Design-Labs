@@ -18,6 +18,12 @@ import ContactImage from "./others/contact-image.png";
 import AboutUsPortrait from "./others/about-us-portrait.png";
 import AboutUsLandscape from "./others/about-us-landscape.png";
 
+// Icons
+import ServiceBell from "./icons/service-bell.png";
+import ServiceBuilding from "./icons/service-building.png";
+import ServiceCommercial from "./icons/service-commercial.png";
+import ServiceHome from "./icons/service-home.png";
+
 export {
   Logo,
   HomeBanner,
@@ -31,4 +37,8 @@ export {
   AboutUsHeader,
   AboutUsLandscape,
   AboutUsPortrait,
+  ServiceBell,
+  ServiceBuilding,
+  ServiceCommercial,
+  ServiceHome,
 };

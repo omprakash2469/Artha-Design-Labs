@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function BlogsPage() {
   return (
     <>
-      <header className="container py-10 xl:py-20">
+      <header className="container py-12 xl:py-28 mt-14">
         <div className="grid xl:grid-cols-2 items-center gap-4 xl:gap-10">
           <div className="lg:pr-10">
             <h4 className="subtitle">Blogs</h4>

@@ -47,49 +47,51 @@ const FooterSection = ({ name, links, external }) => {
 
 export default function Footer() {
   return (
-    <footer className="container bg-[url(/images/home/footer-bg.png)] bg-cover">
-      <div className="grid md:grid-cols-2 xl:grid-cols-[3fr_2fr_2fr_2fr] gap-6 xl:gap-14 py-10 xl:py-20">
-        <div>
-          <Image src={Logo} alt="footer logo" className="w-14" />
-          <p className="my-4 xl:my-8">
-            Our construction services are customized to fit the specific
-            requirements and characteristics of every project
-          </p>
-          <div className="flex gap-x-2">
-            {social_media.map((value, i) => {
-              return (
-                <Link
-                  key={i}
-                  href={value.link}
-                  className="bg-theme-six w-9 h-9 grid place-items-center text-white text-sm"
-                >
-                  <FontAwesomeIcon icon={value.icon} />
-                </Link>
-              );
-            })}
+    <footer className="bg-[url(/images/home/footer-bg.png)] bg-cover">
+      <div className="container ">
+        <div className="grid md:grid-cols-2 xl:grid-cols-[3fr_2fr_2fr_2fr] gap-6 xl:gap-14 py-10 xl:py-20">
+          <div>
+            <Image src={Logo} alt="footer logo" className="w-14" />
+            <p className="my-4 xl:my-8">
+              Our construction services are customized to fit the specific
+              requirements and characteristics of every project
+            </p>
+            <div className="flex gap-x-2">
+              {social_media.map((value, i) => {
+                return (
+                  <Link
+                    key={i}
+                    href={value.link}
+                    className="bg-theme-six w-9 h-9 grid place-items-center text-white text-sm"
+                  >
+                    <FontAwesomeIcon icon={value.icon} />
+                  </Link>
+                );
+              })}
+            </div>
           </div>
+
+          {/* Useful links */}
+          <FooterSection
+            name={"Useful Links"}
+            links={usefulLinks}
+            external={false}
+          />
+
+          {/* Our Services */}
+          <FooterSection
+            name={"Our Services"}
+            links={our_servcies}
+            external={false}
+          />
+
+          {/* Our Services */}
+          <FooterSection
+            name={"Location"}
+            links={footer_location}
+            external={true}
+          />
         </div>
-
-        {/* Useful links */}
-        <FooterSection
-          name={"Useful Links"}
-          links={usefulLinks}
-          external={false}
-        />
-
-        {/* Our Services */}
-        <FooterSection
-          name={"Our Services"}
-          links={our_servcies}
-          external={false}
-        />
-
-        {/* Our Services */}
-        <FooterSection
-          name={"Location"}
-          links={footer_location}
-          external={true}
-        />
       </div>
 
       <p className="py-5 text-center font-poppins border-t border-slate-400 flex justify-center">

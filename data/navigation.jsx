@@ -153,3 +153,11 @@ export const footer_location = [
     link: "tel:9814227724",
   },
 ];
+
+// White navbar pages
+export const white_navbar_pages = [
+  "/about-us",
+  "/contact-us",
+  "/services",
+  "/blogs",
+];
