@@ -32,7 +32,7 @@ export default function Navbar() {
     return (
       <li
         className={`group ${
-          lightTheme ? "text-black hover:text-theme-six" : "text-white"
+          lightTheme ? "text-black hover:text-theme-six" : "xl:text-white"
         }`}
         onClick={() => setNavbar(false)}
       >
@@ -55,9 +55,9 @@ export default function Navbar() {
           <Image src={Logo} alt="Artha Logo" width={50} className="xl:w-14" />
         </Link>
 
-        <div className="flex gap-x-5 xl:gap-x-10 divide-x">
+        <div className="flex gap-x-5 xl:gap-x-10 xl:divide-x">
           <ul
-            className={`absolute xl:static top-20 right-0 z-20 w-52 xl:w-full xl:flex gap-3 xl:gap-x-6 text-sm ${
+            className={`absolute bg-white xl:bg-transparent xl:static top-20 right-0 z-20 w-52 xl:w-full xl:flex gap-3 xl:gap-x-6 text-sm ${
               navbar
                 ? "block border border-slate-300 rounded-lg p-5 space-y-3 shadow-md"
                 : "hidden"
@@ -70,7 +70,7 @@ export default function Navbar() {
 
           {/* Social Media Icons */}
           <ul
-            className={`flex gap-x-2 xl:gap-x-4 pl-4 xl:pl-8 ${
+            className={`hidden xl:flex gap-x-2 xl:gap-x-4 pl-4 xl:pl-8 ${
               lightTheme ? "text-black" : "text-white"
             }`}
           >
@@ -92,7 +92,7 @@ export default function Navbar() {
           <button onClick={() => setNavbar(!navbar)} className="xl:hidden">
             <FontAwesomeIcon
               icon={navbar ? faClose : faBars}
-              className="text-3xl"
+              className={`text-3xl ${lightTheme ? "text-black" : "text-white"}`}
             />
           </button>
         </div>

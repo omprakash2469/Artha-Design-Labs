@@ -10,7 +10,9 @@ export default function InfoList({ name, value, icon }) {
         <h5 className="text-theme-six font-medium text-lg font-poppins">
           {name}
         </h5>
-        <p className="text-slate-500 xl:text-lg">{value}</p>
+        <p className="text-slate-500 text-sm md:text-base xl:text-lg">
+          {value}
+        </p>
       </div>
     </li>
   );

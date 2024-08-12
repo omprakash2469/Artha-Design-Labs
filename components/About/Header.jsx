@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="container py-12 xl:py-28 mt-14">
+    <header className="container py-12 xl:py-28 mt-16">
       <div className="grid xl:grid-cols-2 items-center gap-5 xl:gap-14 text-center xl:text-left">
         <div className="mb-4 xl:mb-8">
           <h3 className="subtitle">About us</h3>

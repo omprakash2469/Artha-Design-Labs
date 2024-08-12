@@ -156,7 +156,7 @@ export default function ContactUs() {
             </div>
             {message.message && (
               <p
-                className={`px-4 py-1 rounded-lg flex items-center justify-between ${
+                className={`px-4 text-sm xl:text-base py-1 rounded-lg flex items-center justify-between ${
                   message.status == "success"
                     ? "bg-green-100 text-green-400"
                     : "text-red-500 bg-red-100"

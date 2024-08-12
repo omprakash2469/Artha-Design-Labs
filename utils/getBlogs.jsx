@@ -3,7 +3,7 @@ import { BLOGS_URI } from "@/data/api";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export function getBlogs(limit) {
+export function getBlogs(limit, slug) {
   const [blogs, setBlogs] = useState(null);
 
   useEffect(() => {
@@ -11,6 +11,7 @@ export function getBlogs(limit) {
       .get(BLOGS_URI, {
         params: {
           limit: limit,
+          slug: slug || "",
         },
       })
       .then((res) => setBlogs(res.data?.blogs))

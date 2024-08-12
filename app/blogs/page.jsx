@@ -8,7 +8,10 @@ export default function BlogsPage() {
     <>
       <header className="container py-12 xl:py-28 mt-14">
         <div className="grid xl:grid-cols-2 items-center gap-4 xl:gap-10">
-          <div className="lg:pr-10">
+          <div className="xl:order-2">
+            <Image src={Project1} alt="main blog" className="w-full" />
+          </div>
+          <div className="lg:pr-10 xl:order-1">
             <h4 className="subtitle">Blogs</h4>
             <h1 className="primary-heading space-y-1 xl:space-y-2">
               <span>Exploring the World: </span>
@@ -22,9 +25,6 @@ export default function BlogsPage() {
               built environment together
             </p>
           </div>
-          <div>
-            <Image src={Project1} alt="main blog" className="w-full" />
-          </div>
         </div>
       </header>
 
@@ -32,7 +32,7 @@ export default function BlogsPage() {
       <section className="container">
         <div className="text-center mb-4 xl:mb-12">
           <h2 className="primary-heading">Latest Blogs</h2>
-          <p className="-mt-2">
+          <p className="-mt-2 text-sm xl:text-base">
             Discover the artistry of architecture through our lens
           </p>
         </div>

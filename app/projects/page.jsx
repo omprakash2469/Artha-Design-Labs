@@ -17,7 +17,7 @@ export default function ProjectPage() {
       <section className="container py-10 xl:py-14">
         <div className="mb-8 xl:mb-10">
           <SectionHeader heading={"Our Projects"} />
-          <p className="-mt-4 text-center">
+          <p className="xl:-mt-4 text-center text-sm xl:text-base">
             Manifesting dreams into tangible triumphs,transforming visions into
             realities
           </p>

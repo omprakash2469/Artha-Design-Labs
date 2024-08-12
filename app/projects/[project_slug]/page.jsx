@@ -14,9 +14,12 @@ export default function ProjectDetails({ params }) {
   const slug = params.project_slug;
   return (
     <>
-      <header className="container py-6 xl:py-20 mt-8 xl:mt-14">
-        <div className="grid grid-cols-2 items-center">
-          <div>
+      <header className="container py-6 xl:py-20 mt-20 xl:mt-14">
+        <div className="grid xl:grid-cols-2 items-center gap-5">
+          <div className="xl:order-2">
+            <Image src={Project1} alt="project image" className="w-full" />
+          </div>
+          <div className="xl:order-1">
             <h2 className="text-xl xl:text-3xl mb-4 xl:mb-8">Altroz Villa</h2>
             <ul className="space-y-2 xl:space-y-6">
               <InfoList
@@ -27,9 +30,6 @@ export default function ProjectDetails({ params }) {
               <InfoList name="Square Meters:" value="10000" icon={faSquare} />
               <InfoList name="Date:" value="12/4/24" icon={faCalendar} />
             </ul>
-          </div>
-          <div>
-            <Image src={Project1} alt="project image" className="w-full" />
           </div>
         </div>
       </header>
@@ -50,7 +50,7 @@ export default function ProjectDetails({ params }) {
             provident placeat deleniti ullam est?
           </p>
 
-          <div className="grid gap-5 grid-cols-2">
+          <div className="grid gap-5 lg:grid-cols-2">
             <Image
               src={ProjectHeader}
               alt="project image"

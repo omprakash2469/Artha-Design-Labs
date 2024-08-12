@@ -26,7 +26,7 @@ const IconItem = ({ icon, value, name }) => {
 export default function ContactPage() {
   return (
     <>
-      <header className="container py-6 xl:py-10 mt-8 xl:mt-20">
+      <header className="container py-6 xl:py-10 mt-20">
         <div className="grid xl:grid-cols-2 gap-y-10 items-center">
           <div className="xl:pr-12">
             <div className="mb-4 xl:mb-8">

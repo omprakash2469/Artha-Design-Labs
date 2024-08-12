@@ -33,7 +33,7 @@ export default function FilterableProjects() {
           return (
             <li key={i} onClick={() => filter_projects(value)}>
               <p
-                className={`transition-all font-medium cursor-pointer ${
+                className={`transition-all text-sm xl:text-base font-medium cursor-pointer ${
                   activeTab == value ? "text-theme-six" : "hover:text-theme-six"
                 }`}
               >

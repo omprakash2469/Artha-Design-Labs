@@ -1,3 +1,5 @@
+import ServicesSidebar from "@/components/Cards/ServicesSidebar";
+import { services_data } from "@/data/services";
 import {
   Project1,
   ServiceBell,
@@ -8,20 +10,6 @@ import {
 } from "@/public/images";
 import Image from "next/image";
 import Link from "next/link";
-
-const categories = [
-  "Interior Design",
-  "Urban Planning",
-  "Sustainability Consulting",
-  "Feasibility Studies",
-  "Project Management",
-  "3D Visualization",
-  "Renovation and Restoration",
-  "Interior Styling and Decoration",
-  "Custom Furniture Design",
-  "Valuation Work",
-  "ULB Dealings",
-];
 
 const ServiceCard = ({ icon, name, desc, image }) => {
   return (
@@ -111,41 +99,20 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="container py-8 xl:py-14">
-        <div className="grid gap-8 xl:grid-cols-[2fr_5fr]">
-          {/* Stick this element when user scroll */}
-          <div className="sticky top-0">
-            <ul className="space-y-4">
-              {categories.map((value, i) => {
-                return (
-                  <li key={i}>
-                    <Link
-                      href={`#${value}`}
-                      className="hover:text-theme-six transition-all cursor-pointer"
-                    >
-                      {value}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+      <section className="container grid gap-8 xl:grid-cols-[2fr_5fr]">
+        <ServicesSidebar />
 
-          {/* Scroll this element */}
-          <div className="space-y-4 xl:space-y-12 overflow-y-auto">
-            {categories.map((value, i) => {
-              return (
-                <ArticleCard
-                  key={i}
-                  id={value}
-                  image={Project1}
-                  info={
-                    "Designing interior spaces that seamlessly integrate with the architectural vision, reflecting the client&apos;s aesthetic preferences and functional requirements. client&apos;s aesthetic preferences and functional requirements. client&apos;s aesthetic preferences and functional requirements.client&apos;s aesthetic preferences and functional requirements."
-                  }
-                />
-              );
-            })}
-          </div>
+        <div className="space-y-4 xl:space-y-12 py-8 xl:py-12">
+          {services_data.map((value, i) => {
+            return (
+              <ArticleCard
+                key={i}
+                id={value.name}
+                image={value.image}
+                info={value.desc}
+              />
+            );
+          })}
         </div>
       </section>
     </>
